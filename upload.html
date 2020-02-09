@@ -3,13 +3,17 @@
 	<head>
 	<title>Simply Stylish</title>
 	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
-	<script src="./app.js"></script>
 	</head>
+
 	<body>
 		<h1>Simply Stylish</h1>
 		<h1>Come Get Your Style Transferred</h1>
-		<input type="file" id="file1">File to get styled</input>
-		<input type="file" id="file2">Style</input>
-		<button>Submit</button>
+		<form enctype="multipart/form-data" action="/upload_images" method="post">
+			<input type="file" id="file1">File to get styled on</input>
+			<input type="file" id="file2">Style</input>
+			<input type="submit" value="Upload">
+		</form>
+			
+		
 	</body>
 </html>
